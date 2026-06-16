@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 04 - Mobile Checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="04-mobile-checkout.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+      <h1>Checkout</h1>
+      <div style="width: 24px;"></div> </header>
+
+    <main>
+      <section class="address-section">
+        <div class="section-title-container">
+          <h2><i class="fa-solid fa-location-dot"></i> Delivery Address</h2>
+          <button type="button" class="text-btn">Change</button>
+        </div>
+        <div class="address-content">
+          <p class="user-info">John Doe | (+84) 123 456 789</p>
+          <p class="address-details">123 Lake Street, District 2, Ho Chi Minh City</p>
+        </div>
+      </section>
+
+      <section class="items-section">
+        <h2><i class="fa-solid fa-shopping-bag"></i> Order Summary</h2>
+        
+        <article class="product-item">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=150&q=80" alt="Wireless Headphones" class="product-img">
+          <div class="product-details">
+            <h3>Wireless Headphones</h3>
+            <p class="product-qty">Qty: 1</p>
+          </div>
+          <span class="product-price">$79.00</span>
+        </article>
+
+        <article class="product-item">
+          <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?w=150&q=80" alt="Phone Stand" class="product-img">
+          <div class="product-details">
+            <h3>Premium Phone Stand</h3>
+            <p class="product-qty">Qty: 2</p>
+          </div>
+          <span class="product-price">$24.00</span>
+        </article>
+      </section>
+
+      <section class="payment-section">
+        <h2><i class="fa-solid fa-credit-card"></i> Payment Method</h2>
+        <form class="payment-form">
+          <label class="payment-option">
+            <input type="radio" name="pay" checked />
+            <div class="option-content">
+              <i class="fa-solid fa-credit-card icon-card"></i>
+              <span>Credit Card</span>
+            </div>
+          </label>
+          
+          <label class="payment-option">
+            <input type="radio" name="pay" />
+            <div class="option-content">
+              <i class="fa-solid fa-wallet icon-wallet"></i>
+              <span>E-Wallet</span>
+            </div>
+          </label>
+          
+          <label class="payment-option">
+            <input type="radio" name="pay" />
+            <div class="option-content">
+              <i class="fa-solid fa-money-bill-wave icon-cash"></i>
+              <span>Cash on Delivery</span>
+            </div>
+          </label>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="total-container">
+        <span class="total-label">Total Payment</span>
+        <p class="total-price">$127.00</p> </div>
+      <button type="button" class="btn-place-order">Place Order</button>
+    </footer>
+  </body>
+</html>
